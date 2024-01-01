@@ -1,0 +1,18 @@
+.foot-container {
+  min-height: 60px;
+  display: block;
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 55px;
+}
+
+.foot-link {
+  padding: 0 8px;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: rgb(66, 66, 66);
+}
