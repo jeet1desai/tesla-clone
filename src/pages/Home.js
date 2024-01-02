@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import HomeSection from "../components/HomeSection";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 
-function Home() {
-  const [burgerStatus, setBurgerStatus] = useState(false);
+const Home = () => {
   return (
     <>
-      <Navigation burgerStatus={burgerStatus} setBurgerStatus={setBurgerStatus} />
-      <div style={burgerStatus ? { height: "100vh", overflow: "hidden" } : { height: "100vh" }}>
+      <Navigation />
+      <div style={{ height: "100vh" }}>
         <HomeSection title="Model S" desc="Order Online for Touchless Delivery" img="model-s.jpg" leftBtnText="Custom order" rightBtnText="Existing Inventory" isDownArrow />
         <HomeSection title="Model Y" desc="Order Online for Touchless Delivery" img="model-y.jpg" leftBtnText="Custom order" rightBtnText="Existing Inventory" />
         <HomeSection title="Model 3" desc="Order Online for Touchless Delivery" img="model-3.jpg" leftBtnText="Custom order" rightBtnText="Existing Inventory" />

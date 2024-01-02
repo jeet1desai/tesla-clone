@@ -2,7 +2,7 @@ import React from "react";
 import "../css/HomeSection.css";
 import Fade from "react-reveal/Fade";
 
-function HomeSection({ img, title, desc, leftBtnText, rightBtnText, isDownArrow }) {
+const HomeSection = ({ img, title, desc, leftBtnText, rightBtnText, isDownArrow }) => {
   return (
     <div style={{ backgroundImage: `url(/images/${img})` }} className="wrap">
       <Fade bottom>
@@ -22,6 +22,6 @@ function HomeSection({ img, title, desc, leftBtnText, rightBtnText, isDownArrow 
       </div>
     </div>
   );
-}
+};
 
 export default HomeSection;

@@ -1,0 +1,59 @@
+.feature-group {
+  margin: 28px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-group .content-box .content-text {
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 2px;
+  line-height: 36px;
+}
+
+.feature-group .content-box .content-support {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.feature-group .content-box p {
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.feature-group .order-btn {
+  width: 200px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.feature-group .order-btn:hover {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+
+.scrim-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, black, black);
+  background-color: black;
+}
+
+.scrim-section h2 {
+  color: #f4f4f4;
+  letter-spacing: -0.5px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}

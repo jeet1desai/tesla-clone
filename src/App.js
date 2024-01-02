@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import ModelS from "./pages/cars/ModelS";
+import ModelS from "./pages/ModelS";
 import { Switch, Route } from "react-router-dom";
 
 function App() {

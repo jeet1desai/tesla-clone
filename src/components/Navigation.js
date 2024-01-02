@@ -4,7 +4,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { NavLink } from "react-router-dom";
 
-function Navigation({ burgerStatus, setBurgerStatus }) {
+const Navigation = () => {
+  const [burgerStatus, setBurgerStatus] = useState(false);
   return (
     <>
       <div className="nav-container">
@@ -90,6 +91,6 @@ function Navigation({ burgerStatus, setBurgerStatus }) {
       </div>
     </>
   );
-}
+};
 
 export default Navigation;
