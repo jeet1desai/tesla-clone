@@ -1,7 +1,7 @@
-import "./App.css";
 import Home from "./pages/Home";
 import ModelS from "./pages/ModelS";
 import { Switch, Route } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return (
@@ -15,5 +15,3 @@ function App() {
 }
 
 export default App;
-
-//animation npm i react-reveal --save

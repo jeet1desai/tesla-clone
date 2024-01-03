@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <>
       <div className="nav-container">
-        <a href="" title="Tesla Inc.">
+        <a href="/" title="Tesla Inc.">
           <img className="logo" src="/images/logo.svg" />
         </a>
         <div className="menu">
