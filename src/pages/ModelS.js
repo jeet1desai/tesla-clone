@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import ShowCase from "../components/ShowCase";
@@ -16,12 +16,17 @@ import LRRedThree from "../images/lr3-red.jpeg";
 
 import CarSection from "../components/CarSection";
 
+import LongRange from "../images/long-range.jpeg";
+import Plaid from "../images/plaid.jpeg";
+
 const ModelS = () => {
+  const [toggle, setToggle] = useState(true);
+
   return (
     <>
       <Navigation />
       <div style={{ height: "100vh" }}>
-        <ShowCase title="Model S" desc="Paid" img="model-s.jpg" />
+        <ShowCase title="Model S" desc="Plaid" img="model-s.jpg" />
         <div className="scrim-section">
           <Fade bottom>
             <h2>All-New Interior</h2>
@@ -83,6 +88,61 @@ const ModelS = () => {
             </div>
             <button className="btn">Order Now</button>
           </Fade>
+        </div>
+        <div className="long-plaid-content">
+          <div className="content-header">
+            <h2>Electric Powertrain</h2>
+            <p>Long Range and Plaid platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.</p>
+          </div>
+          {toggle ? <img src={LongRange} /> : <img src={Plaid} />}
+          <div className="content-toggle-box">
+            <ul>
+              <li className={toggle && "active"}>
+                <button onClick={() => setToggle(true)}>
+                  <div>
+                    <h3>Long Range</h3>
+                    <p>Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration.</p>
+                  </div>
+                  <div className="specification-content">
+                    <div>
+                      <h3>3.1 s</h3>
+                      <p> 0-60 mph</p>
+                    </div>
+                    <div>
+                      <h3>3412 mi</h3>
+                      <p>range (est.)</p>
+                    </div>
+                    <div>
+                      <h3>670 hp</h3>
+                      <p>peak power</p>
+                    </div>
+                  </div>
+                </button>
+              </li>
+              <li className={!toggle && "active"}>
+                <button onClick={() => setToggle(false)}>
+                  <div>
+                    <h3>Plaid</h3>
+                    <p>Dual Motor All-Wheel Drive platform allows for the longest range, and now delivers insane power and acceleration.</p>
+                  </div>
+                  <div className="specification-content">
+                    <div>
+                      <h3>3.1 s</h3>
+                      <p> 0-60 mph</p>
+                    </div>
+                    <div>
+                      <h3>3412 mi</h3>
+                      <p>range (est.)</p>
+                    </div>
+                    <div>
+                      <h3>670 hp</h3>
+                      <p>peak power</p>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
         <CarSection img="s-red.jpeg" />
         <div className="banner-layout-box">

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/ShowCase.css";
+import "../css/models.css";
 import Fade from "react-reveal/Fade";
 
 const ShowCase = ({ img, title, desc }) => {
