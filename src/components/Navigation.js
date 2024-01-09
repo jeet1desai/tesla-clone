@@ -19,7 +19,7 @@ const Navigation = () => {
           <NavLink to="/#" className="nav-link">
             Model 3
           </NavLink>
-          <NavLink to="/#" className="nav-link">
+          <NavLink to="/ModelX" className="nav-link">
             Model X
           </NavLink>
           <NavLink to="/#" className="nav-link">
